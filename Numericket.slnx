@@ -1,3 +1,6 @@
 <Solution>
-  <Project Path="Numericket.csproj" />
+  <Project Path="ConsoleLibrary/ConsoleLibrary.csproj" Id="6a397fb4-298b-4903-b73a-b90666dcb62c" />
+  <Project Path="NumericketConsole/NumericketConsoleApp.csproj" />
+  <Project Path="Tests/TossLibraryTests/TossLibraryTests.csproj" Id="fb6c95cd-2223-4fad-90a1-0bacdc7bdffa" />
+  <Project Path="TossLibrary/TossLibrary.csproj" Id="95d2783e-9776-49ad-bf11-9018f411a1e1" />
 </Solution>

@@ -1,5 +1,5 @@
-﻿using Numericket.Common.ConsoleManager;
-namespace Numericket.Common.AbstractTossManager;
+﻿using ConsoleLibrary.ConsoleManager;
+namespace TossLibrary.TossManager;
 
 /// <summary>
 /// Serves as base class for the toss manager which is operated based on Odd or Even strategy
@@ -43,6 +43,18 @@ public abstract class AbstractOddOrEvenTossManager : AbstractTossManager
     /// <param name="teamTwoInput">The number chose by the team two.</param>
     protected abstract void DisplayInputSpecifiedByBothParties(int teamOneInput, int teamTwoInput);
 
+    /// <summary>
+    /// Gets the name of the team one.
+    /// </summary>
+    /// <returns>the name of the team one.</returns>
+    protected abstract string GetTeamOneName();
+
+    /// <summary>
+    /// Gets the name of the team two.
+    /// </summary>
+    /// <returns>the name of the team two.</returns>
+    protected abstract string GetTeamTwoName();
+
     /**
      * OVERRIDDEN / IMPLEMENTED METHODS 
      */
@@ -54,7 +66,7 @@ public abstract class AbstractOddOrEvenTossManager : AbstractTossManager
         DisplayPromptToGetTossInputsFromAllParties();
 
         // reads the input from both the users
-        var teamInputs = ConsoleManager.GetAllowedNumericInputs([GetAllTeamOneTossInputs(), GetAllTeamTwoTossInputs()]);
+        var teamInputs = ConsoleManager.GetAllowedNumericInputs([GetAllTeamOneTossInputs(), GetAllTeamTwoTossInputs()], [GetTeamOneName()+ " is ready with the input ", GetTeamTwoName() + " is ready with the input "]);
 
         // adds the result of both the user inputs and check if it is an odd number
         int teamOneInput = teamInputs[0];

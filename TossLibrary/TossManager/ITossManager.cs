@@ -1,4 +1,4 @@
-﻿namespace Numericket.Common.AbstractTossManager;
+﻿namespace TossLibrary.TossManager;
 
 /// <summary>
 /// Defines a contract for executing a toss sequence and determining a winner.

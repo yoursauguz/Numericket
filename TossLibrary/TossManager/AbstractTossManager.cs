@@ -1,5 +1,5 @@
-﻿using Numericket.Common.ConsoleManager;
-namespace Numericket.Common.AbstractTossManager;
+﻿using ConsoleLibrary.ConsoleManager;
+namespace TossLibrary.TossManager;
 
 /// <summary>
 /// Serves as the base class for managing the toss mechanics using the Template Method design pattern.

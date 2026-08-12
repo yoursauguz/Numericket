@@ -1,5 +1,5 @@
-﻿using Numericket.Common.ConsoleManager;
-namespace Numericket.Common.AbstractTossManager;
+﻿using ConsoleLibrary.ConsoleManager;
+namespace TossLibrary.TossManager;
 
 /// <summary>
 /// Serves as base class for the toss manager which is operated based on heads or tails strategy

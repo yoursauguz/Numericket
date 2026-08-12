@@ -1,0 +1,156 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Repository\\Numericket\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{0A1BA775-7C3F-8489-4DF2-45C56127F795}|NumericketConsole\\NumericketConsoleApp.csproj|c:\\repository\\numericket\\numericketconsole\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0A1BA775-7C3F-8489-4DF2-45C56127F795}|NumericketConsole\\NumericketConsoleApp.csproj|solutionrelative:numericketconsole\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0A1BA775-7C3F-8489-4DF2-45C56127F795}|NumericketConsole\\NumericketConsoleApp.csproj|c:\\repository\\numericket\\numericketconsole\\numerickettossmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0A1BA775-7C3F-8489-4DF2-45C56127F795}|NumericketConsole\\NumericketConsoleApp.csproj|solutionrelative:numericketconsole\\numerickettossmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FB6C95CD-2223-4FAD-90A1-0BACDC7BDFFA}|Tests\\TossLibraryTests\\TossLibraryTests.csproj|c:\\repository\\numericket\\tests\\tosslibrarytests\\tossmanagertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FB6C95CD-2223-4FAD-90A1-0BACDC7BDFFA}|Tests\\TossLibraryTests\\TossLibraryTests.csproj|solutionrelative:tests\\tosslibrarytests\\tossmanagertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{95D2783E-9776-49AD-BF11-9018F411A1E1}|TossLibrary\\TossLibrary.csproj|c:\\repository\\numericket\\tosslibrary\\tossmanager\\abstractoddoreventossmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{95D2783E-9776-49AD-BF11-9018F411A1E1}|TossLibrary\\TossLibrary.csproj|solutionrelative:tosslibrary\\tossmanager\\abstractoddoreventossmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{95D2783E-9776-49AD-BF11-9018F411A1E1}|TossLibrary\\TossLibrary.csproj|c:\\repository\\numericket\\tosslibrary\\tossmanager\\abstracttossmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{95D2783E-9776-49AD-BF11-9018F411A1E1}|TossLibrary\\TossLibrary.csproj|solutionrelative:tosslibrary\\tossmanager\\abstracttossmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6A397FB4-298B-4903-B73A-B90666DCB62C}|ConsoleLibrary\\ConsoleLibrary.csproj|c:\\repository\\numericket\\consolelibrary\\consolemanager\\abstractconsolemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6A397FB4-298B-4903-B73A-B90666DCB62C}|ConsoleLibrary\\ConsoleLibrary.csproj|solutionrelative:consolelibrary\\consolemanager\\abstractconsolemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6A397FB4-298B-4903-B73A-B90666DCB62C}|ConsoleLibrary\\ConsoleLibrary.csproj|c:\\repository\\numericket\\consolelibrary\\consolemanager\\consolemessagetype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6A397FB4-298B-4903-B73A-B90666DCB62C}|ConsoleLibrary\\ConsoleLibrary.csproj|solutionrelative:consolelibrary\\consolemanager\\consolemessagetype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6A397FB4-298B-4903-B73A-B90666DCB62C}|ConsoleLibrary\\ConsoleLibrary.csproj|c:\\repository\\numericket\\consolelibrary\\consolemanager\\iconsolemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6A397FB4-298B-4903-B73A-B90666DCB62C}|ConsoleLibrary\\ConsoleLibrary.csproj|solutionrelative:consolelibrary\\consolemanager\\iconsolemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "TossManagerTests.cs",
+              "DocumentMoniker": "C:\\Repository\\Numericket\\Tests\\TossLibraryTests\\TossManagerTests.cs",
+              "RelativeDocumentMoniker": "Tests\\TossLibraryTests\\TossManagerTests.cs",
+              "ToolTip": "C:\\Repository\\Numericket\\Tests\\TossLibraryTests\\TossManagerTests.cs",
+              "RelativeToolTip": "Tests\\TossLibraryTests\\TossManagerTests.cs",
+              "ViewState": "AgIAADIAAAAAAAAAAADwv0IAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-12T18:59:43.845Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AbstractOddOrEvenTossManager.cs",
+              "DocumentMoniker": "C:\\Repository\\Numericket\\TossLibrary\\TossManager\\AbstractOddOrEvenTossManager.cs",
+              "RelativeDocumentMoniker": "TossLibrary\\TossManager\\AbstractOddOrEvenTossManager.cs",
+              "ToolTip": "C:\\Repository\\Numericket\\TossLibrary\\TossManager\\AbstractOddOrEvenTossManager.cs",
+              "RelativeToolTip": "TossLibrary\\TossManager\\AbstractOddOrEvenTossManager.cs",
+              "ViewState": "AgIAADEAAAAAAAAAAAAcwEgAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-12T18:46:27.613Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AbstractTossManager.cs",
+              "DocumentMoniker": "C:\\Repository\\Numericket\\TossLibrary\\TossManager\\AbstractTossManager.cs",
+              "RelativeDocumentMoniker": "TossLibrary\\TossManager\\AbstractTossManager.cs",
+              "ToolTip": "C:\\Repository\\Numericket\\TossLibrary\\TossManager\\AbstractTossManager.cs",
+              "RelativeToolTip": "TossLibrary\\TossManager\\AbstractTossManager.cs",
+              "ViewState": "AgIAADMAAAAAAAAAAAAmwEMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-12T18:50:22.959Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Repository\\Numericket\\NumericketConsole\\Program.cs",
+              "RelativeDocumentMoniker": "NumericketConsole\\Program.cs",
+              "ToolTip": "C:\\Repository\\Numericket\\NumericketConsole\\Program.cs",
+              "RelativeToolTip": "NumericketConsole\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAABhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-12T18:43:57.035Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "NumericketTossManager.cs",
+              "DocumentMoniker": "C:\\Repository\\Numericket\\NumericketConsole\\NumericketTossManager.cs",
+              "RelativeDocumentMoniker": "NumericketConsole\\NumericketTossManager.cs",
+              "ToolTip": "C:\\Repository\\Numericket\\NumericketConsole\\NumericketTossManager.cs",
+              "RelativeToolTip": "NumericketConsole\\NumericketTossManager.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAD4vyQAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-12T18:43:29.736Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AbstractConsoleManager.cs",
+              "DocumentMoniker": "C:\\Repository\\Numericket\\ConsoleLibrary\\ConsoleManager\\AbstractConsoleManager.cs",
+              "RelativeDocumentMoniker": "ConsoleLibrary\\ConsoleManager\\AbstractConsoleManager.cs",
+              "ToolTip": "C:\\Repository\\Numericket\\ConsoleLibrary\\ConsoleManager\\AbstractConsoleManager.cs",
+              "RelativeToolTip": "ConsoleLibrary\\ConsoleManager\\AbstractConsoleManager.cs",
+              "ViewState": "AgIAACMAAAAAAAAAAAAIwLEAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-12T18:40:08.62Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ConsoleMessageType.cs",
+              "DocumentMoniker": "C:\\Repository\\Numericket\\ConsoleLibrary\\ConsoleManager\\ConsoleMessageType.cs",
+              "RelativeDocumentMoniker": "ConsoleLibrary\\ConsoleManager\\ConsoleMessageType.cs",
+              "ToolTip": "C:\\Repository\\Numericket\\ConsoleLibrary\\ConsoleManager\\ConsoleMessageType.cs",
+              "RelativeToolTip": "ConsoleLibrary\\ConsoleManager\\ConsoleMessageType.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-12T18:40:07.148Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "IConsoleManager.cs",
+              "DocumentMoniker": "C:\\Repository\\Numericket\\ConsoleLibrary\\ConsoleManager\\IConsoleManager.cs",
+              "RelativeDocumentMoniker": "ConsoleLibrary\\ConsoleManager\\IConsoleManager.cs",
+              "ToolTip": "C:\\Repository\\Numericket\\ConsoleLibrary\\ConsoleManager\\IConsoleManager.cs",
+              "RelativeToolTip": "ConsoleLibrary\\ConsoleManager\\IConsoleManager.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-12T18:40:02.83Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
