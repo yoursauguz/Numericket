@@ -1,5 +1,6 @@
-﻿using ConsoleLibrary.ConsoleManager;
-namespace TossLibrary.TossManager;
+﻿using ConsoleLibrary;
+
+namespace TossLibrary;
 
 /// <summary>
 /// Serves as base class for the toss manager which is operated based on Odd or Even strategy

@@ -1,4 +1,4 @@
-﻿namespace TossLibrary.TossManager;
+﻿namespace TossLibrary;
 
 /// <summary>
 /// Defines a contract for executing a toss sequence and determining a winner.

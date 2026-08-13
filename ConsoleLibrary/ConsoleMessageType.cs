@@ -1,9 +1,10 @@
-﻿namespace ConsoleLibrary.ConsoleManager;
+﻿namespace ConsoleLibrary;
 
 public enum ConsoleMessageType
 {
     DEFAULT,
     INFORMATION,
     ERROR,
+    HEADING,
     SUCCESS
 }

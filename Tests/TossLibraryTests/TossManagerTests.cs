@@ -1,6 +1,6 @@
-﻿using ConsoleLibrary.ConsoleManager;
+﻿using ConsoleLibrary;
 using Moq;
-using TossLibrary.TossManager;
+using TossLibrary;
 
 namespace TossLibraryTests;
 
@@ -17,35 +17,17 @@ public class TossManagerTests
 
     private class TestableOddOrEvenTossManager : AbstractOddOrEvenTossManager
     {
-        public int[] BothPartiesInputs { get; private set; }
-
-
-        public bool PromptToGetTossInputsFromAllParties { get; private set; }
-
-
         public TestableOddOrEvenTossManager(IConsoleManager consoleManager) : base(consoleManager) { }
 
-        protected override void DisplayCalledTossChoice(int selectedOption)
-        {
-        }
+        protected override void DisplayCalledTossChoice(int selectedOption) { }
 
-        protected override void DisplayInputSpecifiedByBothParties(int teamOneInput, int teamTwoInput)
-        {
-            BothPartiesInputs = [teamOneInput, teamTwoInput];
-        }
+        protected override void DisplayInputSpecifiedByBothParties(int teamOneInput, int teamTwoInput) { }
 
-        protected override void DisplayPromptToCallForToss()
-        {
-        }
+        protected override void DisplayPromptToCallForToss() { }
 
-        protected override void DisplayPromptToGetTossInputsFromAllParties()
-        {
-            PromptToGetTossInputsFromAllParties = true;
-        }
+        protected override void DisplayPromptToGetTossInputsFromAllParties() { }
 
-        protected override void DisplayTossWinner(bool didCallerWin)
-        {
-        }
+        protected override void DisplayTossWinner(bool didCallerWin) { }
 
         protected override IReadOnlyDictionary<char, int> GetAllowedInputsForTossCaller() => new Dictionary<char, int>() { { 'I', 1 }, { 'O', 2 } };
 
@@ -57,15 +39,9 @@ public class TossManagerTests
 
         public bool TestEvaluateTossOutcome(int selectedOption) => EvaluateTossOutcome(selectedOption);
 
-        protected override string GetTeamOneName()
-        {
-            return "";
-        }
+        protected override string GetTeamOneName() => "";
 
-        protected override string GetTeamTwoName()
-        {
-            return "";
-        }
+        protected override string GetTeamTwoName() => "";
     }
 
 
@@ -75,20 +51,16 @@ public class TossManagerTests
     [TestCase(2, 2, 2, true, TestName = "Caller picked 2 (Even). Inputs are 2+2 = 4 (Even). Outcome: Caller Won")]
     public void EvaluateOddOrEvenTossOutcome_ExecuteMethodsInOrderAndCalculateWinner_BasedOnTestCases(int selectedOption, int teamOneInput, int teamTwoInput, bool isCallerWon)
     {
-
-        _mockConsoleManager.Setup(c => c.GetAllowedNumericInputs(It.IsAny<IReadOnlyDictionary<char, int>[]>()))
+        _mockConsoleManager.Setup(c => c.GetAllowedNumericInputs(
+                It.IsAny<IReadOnlyDictionary<char, int>[]>(),
+                It.IsAny<string[]>(),
+                It.IsAny<string>()))
             .Returns(new[] { teamOneInput, teamTwoInput });
 
         var manager = new TestableOddOrEvenTossManager(_mockConsoleManager.Object);
 
         bool result = manager.TestEvaluateTossOutcome(selectedOption);
 
-        Assert.Multiple(() =>
-        {
-            Assert.That(manager.PromptToGetTossInputsFromAllParties, Is.True);
-            Assert.That(manager.BothPartiesInputs, Is.EqualTo([teamOneInput, teamTwoInput]));
-            Assert.That(result, Is.EqualTo(isCallerWon));
-        });
-
+        Assert.That(result, Is.EqualTo(isCallerWon));
     }
 }

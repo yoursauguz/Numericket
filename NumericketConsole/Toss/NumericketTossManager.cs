@@ -1,12 +1,12 @@
-﻿using TossLibrary.TossManager;
-using ConsoleLibrary.ConsoleManager;
+﻿using ConsoleLibrary;
+using TossLibrary;
 
-namespace Numericket;
+namespace NumericketConsoleApp.Toss;
 
 /// <summary>
 /// Manages and executes the toss strategy required for the numericket game and identifies which team is gonna bat first.
 /// </summary>
-public class NumericketTossManager : AbstractOddOrEvenTossManager
+public class NumericketTossManager : AbstractOddOrEvenTossManager, INumericketTossManager
 {
     /// <summary>
     /// Possible input options for the team one to use during toss.
@@ -26,13 +26,13 @@ public class NumericketTossManager : AbstractOddOrEvenTossManager
     /// <summary>
     /// Name of the home team
     /// </summary>
-    public string HomeTeamName { get; init; } = "Home Team";
+    public string HomeTeamName { get; private set; } = "Home Team";
 
 
     /// <summary>
     /// Name of the away team
     /// </summary>
-    public string AwayTeamName { get; init; } = "Away Team";
+    public string AwayTeamName { get; private set; } = "Away Team";
 
     /// <summary>
     /// Initializes a new instance of the <see cref="NumericketTossManager"/> class with the specified console manager.
@@ -80,7 +80,7 @@ public class NumericketTossManager : AbstractOddOrEvenTossManager
     {
         _consoleManager.DisplayMessage(ConsoleMessageType.DEFAULT, "Its time for the toss\n");
         _consoleManager.DisplayMessage(ConsoleMessageType.INFORMATION, "Its your call Odd or Even\n", AwayTeamName);
-        _consoleManager.DisplayTable([], new string[][]
+        _consoleManager.DisplayTable(ConsoleMessageType.INFORMATION, [], new string[][]
         {
            _awayTeamInputs.Where(input => input.Value == 1).Select(x => x.Key + " - Odd").ToArray(),
            _awayTeamInputs.Where(input => input.Value == 2).Select(x => x.Key + " - Even").ToArray(),
@@ -92,7 +92,7 @@ public class NumericketTossManager : AbstractOddOrEvenTossManager
     /// </summary>
     protected override void DisplayCalledTossChoice(int selectedOption)
     {
-        _consoleManager.DisplayMessage(ConsoleMessageType.SUCCESS, $"{AwayTeamName} has chosen - {(selectedOption == 1 ? "odd" : "even")}");
+        _consoleManager.DisplayMessage(ConsoleMessageType.SUCCESS, $"{AwayTeamName} has chosen - {(selectedOption == 1 ? "odd" : "even")} \n");
     }
 
 
@@ -101,7 +101,7 @@ public class NumericketTossManager : AbstractOddOrEvenTossManager
     /// </summary>
     protected override void DisplayTossWinner(bool didCallerWin)
     {
-        _consoleManager.DisplayMessage(ConsoleMessageType.SUCCESS, "Won the toss", $"{(didCallerWin ? AwayTeamName : HomeTeamName)}");
+        _consoleManager.DisplayMessage(ConsoleMessageType.SUCCESS, "Won the toss \n\n", $"{(didCallerWin ? AwayTeamName : HomeTeamName)}");
     }
 
     /// <summary>
@@ -110,7 +110,7 @@ public class NumericketTossManager : AbstractOddOrEvenTossManager
     protected override void DisplayPromptToGetTossInputsFromAllParties()
     {
         _consoleManager.DisplayMessage(ConsoleMessageType.DEFAULT, "Enter the number to proceed for the toss");
-        _consoleManager.DisplayTable([HomeTeamName, AwayTeamName], new string[][]
+        _consoleManager.DisplayTable(ConsoleMessageType.INFORMATION,[HomeTeamName, AwayTeamName], new string[][]
         {
            _homeTeamInputs.Select(x => x.Key + " - " + x.Value).ToArray(),
            _awayTeamInputs.Select(x => x.Key + " - " + x.Value).ToArray(),
@@ -122,7 +122,7 @@ public class NumericketTossManager : AbstractOddOrEvenTossManager
     /// </summary>
     protected override void DisplayInputSpecifiedByBothParties(int teamOneInput, int teamTwoInput)
     {
-        _consoleManager.DisplayTable([HomeTeamName, AwayTeamName], new string[][]
+        _consoleManager.DisplayTable(ConsoleMessageType.INFORMATION, [HomeTeamName, AwayTeamName], new string[][]
        {
            [teamOneInput.ToString()],
            [teamTwoInput.ToString()],
@@ -158,11 +158,24 @@ public class NumericketTossManager : AbstractOddOrEvenTossManager
      */
 
     /// <summary>
-    /// Tells whether the home team is going to bat first.
+    /// <inheritdoc/>
     /// </summary>
-    /// <returns>
-    /// <c>true</c> if the home team has found a way to bat first; otherwise, <c>false</c>.
-    /// </returns>
+    /// <exception cref="ArgumentNullException">throws exception if home and away team names are null or empty</exception>
+    public void SetTeamNames(string homeTeamName, string awayTeamName)
+    {
+        if (String.IsNullOrEmpty(homeTeamName))
+            throw new ArgumentNullException("home team name cannot be empty.", nameof(homeTeamName));
+
+        if (String.IsNullOrEmpty(awayTeamName))
+            throw new ArgumentNullException("away team name cannot be empty.", nameof(awayTeamName));
+
+        HomeTeamName = homeTeamName;
+        AwayTeamName = awayTeamName;
+    }
+
+    ///<summary>
+    ///<inheritdoc/>
+    ///</summary>
     public bool IsHomeTeamBattingFirst()
     {
         // checks if the away team has won the toss
@@ -173,7 +186,7 @@ public class NumericketTossManager : AbstractOddOrEvenTossManager
 
         var winningTeamInputs = didCallerWin ? _awayTeamInputs : _homeTeamInputs;
 
-        _consoleManager.DisplayTable([], new string[][]
+        _consoleManager.DisplayTable(ConsoleMessageType.INFORMATION, [], new string[][]
        {
            winningTeamInputs.Where(input => input.Value == 1).Select(x => x.Key + " - Bat").ToArray(),
            winningTeamInputs.Where(input => input.Value == 2).Select(x => x.Key + " - Bowl").ToArray(),
@@ -185,8 +198,7 @@ public class NumericketTossManager : AbstractOddOrEvenTossManager
         .ToDictionary(kvp => kvp.Key, kvp => kvp.Value), "") == 1;
 
         // displays the toss summary and tells whether the home team is going to bat first or not
-        _consoleManager.DisplayMessage(ConsoleMessageType.SUCCESS, "Wins the toss", $"{(didCallerWin ? AwayTeamName : HomeTeamName)}");
-        _consoleManager.DisplayMessage(ConsoleMessageType.SUCCESS, $"And chose to {(isBatting ? "bat" : "bowl")} first");
+        _consoleManager.DisplayMessage(ConsoleMessageType.SUCCESS, $"Wins the toss and chose to {(isBatting ? "bat" : "bowl")} first", $"{(didCallerWin ? AwayTeamName : HomeTeamName)}");
         return !didCallerWin && isBatting;
     }
 }

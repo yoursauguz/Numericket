@@ -1,4 +1,4 @@
-﻿namespace ConsoleLibrary.ConsoleManager;
+﻿namespace ConsoleLibrary;
 
 public interface IConsoleManager
 {
@@ -8,6 +8,11 @@ public interface IConsoleManager
 
     public void DisplayMessage(ConsoleMessageType type, string message, string title = "");
 
-    public void DisplayTable(string[] columnHeaders, string[][] table, TableSpacing spacing = TableSpacing.CENTER);
+    public void DisplayTable(ConsoleMessageType type, string[] columnHeaders, string[][] table, TableSpacing spacing = TableSpacing.CENTER);
 
+    public char GetInputCharacter(ConsoleMessageType type, string message, string title = "");
+
+    public void NewLine();
+
+    public void Clear();
 }

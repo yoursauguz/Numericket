@@ -1,4 +1,4 @@
-﻿namespace ConsoleLibrary.ConsoleManager;
+﻿namespace ConsoleLibrary;
 
 public enum TableSpacing
 {

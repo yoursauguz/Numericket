@@ -1,5 +1,4 @@
-﻿
-namespace ConsoleLibrary.ConsoleManager;
+﻿namespace ConsoleLibrary;
 
 public abstract class AbstractConsoleManager : IConsoleManager
 {
@@ -21,7 +20,7 @@ public abstract class AbstractConsoleManager : IConsoleManager
     public void DisplayMessage(ConsoleMessageType type, string message, string title = "")
     {
         if (String.IsNullOrEmpty(message))
-            return;
+            throw new ArgumentNullException("Message cannot be empty");
 
         var defaultColor = DefaultConsoleForegroundColor();
 
@@ -30,6 +29,7 @@ public abstract class AbstractConsoleManager : IConsoleManager
             ConsoleMessageType.ERROR => ConsoleColor.Red,
             ConsoleMessageType.INFORMATION => ConsoleColor.Yellow,
             ConsoleMessageType.SUCCESS => ConsoleColor.Green,
+            ConsoleMessageType.HEADING => ConsoleColor.Blue,
             _ => ConsoleColor.Gray
         };
 
@@ -121,18 +121,24 @@ public abstract class AbstractConsoleManager : IConsoleManager
         }
     }
 
-    public void DisplayTable(string[] columnHeaders, string[][] table, TableSpacing spacing = TableSpacing.CENTER)
+    public void DisplayTable(ConsoleMessageType type, string[] columnHeaders, string[][] table, TableSpacing spacing = TableSpacing.CENTER)
     {
-        if (table == null)
-            throw new ArgumentNullException("Table cannot be null");
+        ArgumentNullException.ThrowIfNull(table);
 
         int maximumRowCount = table.Select(row => row.Length).DefaultIfEmpty(0).Max();
 
         if (maximumRowCount == 0)
             return;
 
-        if (columnHeaders != null)
-            RenderRowsByColumnValues(columnHeaders, spacing);
+        string divider = new string('=', MaximumCharactersPerRow());
+
+        if (columnHeaders != null && columnHeaders.Length > 0)
+        {
+            DisplayMessage(ConsoleMessageType.DEFAULT, divider);
+            RenderRowsByColumnValues(ConsoleMessageType.HEADING, columnHeaders, spacing);
+        }
+
+        DisplayMessage(ConsoleMessageType.DEFAULT, divider);
 
         for (int i = 0; i < maximumRowCount; i++)
         {
@@ -141,40 +147,66 @@ public abstract class AbstractConsoleManager : IConsoleManager
 
             for (int j = 0; j < table.Length; j++)
             {
-                if (table[j].Length <= i)
-                    continue;
-
-                columns[j] = table[j][i];
+                if (table[j].Length > i)
+                {
+                    columns[j] = table[j][i];
+                }
             }
 
-            RenderRowsByColumnValues(columns.ToArray(), spacing);
+            RenderRowsByColumnValues(type, columns, spacing);
         }
+
+        DisplayMessage(ConsoleMessageType.DEFAULT, divider);
     }
 
-    private void RenderRowsByColumnValues(string[] columns, TableSpacing spacing = TableSpacing.CENTER)
+    public void NewLine()
     {
-        if (columns.Length == 0) return;
+        Console.WriteLine();
+    }
 
-        int characters = columns.Sum(column => column.Length);
+    public void Clear()
+    {
+        Console.Clear();
+    }
 
-        if (characters > MaximumCharactersPerRow())
-            throw new InvalidDataException("Character limit exceeds the maximum characters per row");
 
-        int difference = MaximumCharactersPerRow() - characters;
+    public char GetInputCharacter(ConsoleMessageType type, string message, string title = "")
+    {
+        DisplayMessage(type, message, title);
+        ConsoleKeyInfo input = Console.ReadKey(intercept: true);
+        return char.ToUpper(input.KeyChar);
+    }
+    private void RenderRowsByColumnValues(ConsoleMessageType type, string[] columns, TableSpacing spacing = TableSpacing.CENTER)
+    {
+        if (columns.Length == 0)
+            return;
 
-        string rowToRender = string.Empty;
+        int interColumnSpaces = spacing == TableSpacing.CENTER && columns.Length > 1 ? columns.Length - 1 : 0;
+        int totalTextLength = columns.Sum(column => column.Length) + interColumnSpaces;
+
+        if (totalTextLength > MaximumCharactersPerRow())
+            throw new InvalidDataException("Character limit exceeds the maximum characters per row.");
+
+        int difference = MaximumCharactersPerRow() - totalTextLength;
 
         if (spacing == TableSpacing.CENTER)
         {
-            int space = difference / 2;
-            rowToRender = new string(' ', space) + string.Join(" ", columns) + " " + new string(' ', space);
-            Console.WriteLine(rowToRender);
+            int sidePadding = difference / 2;
+            string rowToRender = new string(' ', sidePadding) + string.Join(" ", columns) + new string(' ', sidePadding);
+            DisplayMessage(type, rowToRender);
         }
-
         else if (spacing == TableSpacing.SPACE_BETWEEN)
         {
-            rowToRender = string.Join(new string(' ', difference), columns);
-            Console.WriteLine(rowToRender);
+            if (columns.Length == 1)
+            {
+                DisplayMessage(type, columns[0]);
+            }
+            else
+            {
+                int gap = difference / (columns.Length - 1);
+                string rowToRender = string.Join(new string(' ', gap), columns);
+                DisplayMessage(type, rowToRender);
+            }
         }
     }
 }

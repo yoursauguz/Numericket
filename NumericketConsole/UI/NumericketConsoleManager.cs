@@ -1,9 +1,12 @@
-﻿using ConsoleLibrary.ConsoleManager;
+﻿using ConsoleLibrary;
 
-namespace Numericket;
+namespace NumericketConsoleApp.Managers;
 
 public class NumericketConsoleManager : AbstractConsoleManager
 {
+    /// <summary>
+    /// <inheritdoc/>
+    /// </summary>
     protected override int MaximumCharactersPerRow()
     {
         return 50;
