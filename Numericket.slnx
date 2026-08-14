@@ -1,6 +1,8 @@
 <Solution>
+  <Project Path="CacheManagerLibrary/CacheManagerLibrary.csproj" Id="6af690c2-8881-4f95-887f-b439c58e390a" />
   <Project Path="ConsoleLibrary/ConsoleLibrary.csproj" Id="6a397fb4-298b-4903-b73a-b90666dcb62c" />
   <Project Path="NumericketConsole/NumericketConsoleApp.csproj" />
-  <Project Path="Tests/TossLibraryTests/TossLibraryTests.csproj" Id="fb6c95cd-2223-4fad-90a1-0bacdc7bdffa" />
+  <Project Path="Tests/CacheManagerLibraryTests/CacheManagerLibraryTests.csproj" Id="f47e5571-692f-4fc2-afe8-8191114fa0c8" />
+  <Project Path="Tests/TossLibraryTests/TossLibraryTests.csproj" />
   <Project Path="TossLibrary/TossLibrary.csproj" Id="95d2783e-9776-49ad-bf11-9018f411a1e1" />
 </Solution>

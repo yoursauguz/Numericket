@@ -3,52 +3,20 @@
   "WorkspaceRootPath": "C:\\Repository\\Numericket\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{0A1BA775-7C3F-8489-4DF2-45C56127F795}|NumericketConsole\\NumericketConsoleApp.csproj|c:\\repository\\numericket\\numericketconsole\\toss\\numerickettossmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0A1BA775-7C3F-8489-4DF2-45C56127F795}|NumericketConsole\\NumericketConsoleApp.csproj|solutionrelative:numericketconsole\\toss\\numerickettossmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0A1BA775-7C3F-8489-4DF2-45C56127F795}|NumericketConsole\\NumericketConsoleApp.csproj|c:\\repository\\numericket\\numericketconsole\\toss\\inumerickettossmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0A1BA775-7C3F-8489-4DF2-45C56127F795}|NumericketConsole\\NumericketConsoleApp.csproj|solutionrelative:numericketconsole\\toss\\inumerickettossmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0A1BA775-7C3F-8489-4DF2-45C56127F795}|NumericketConsole\\NumericketConsoleApp.csproj|c:\\repository\\numericket\\numericketconsole\\game\\matchexecutor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0A1BA775-7C3F-8489-4DF2-45C56127F795}|NumericketConsole\\NumericketConsoleApp.csproj|solutionrelative:numericketconsole\\game\\matchexecutor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6A397FB4-298B-4903-B73A-B90666DCB62C}|ConsoleLibrary\\ConsoleLibrary.csproj|c:\\repository\\numericket\\consolelibrary\\abstractconsolemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6A397FB4-298B-4903-B73A-B90666DCB62C}|ConsoleLibrary\\ConsoleLibrary.csproj|solutionrelative:consolelibrary\\abstractconsolemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0A1BA775-7C3F-8489-4DF2-45C56127F795}|NumericketConsole\\NumericketConsoleApp.csproj|c:\\repository\\numericket\\numericketconsole\\ui\\numericketconsolemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0A1BA775-7C3F-8489-4DF2-45C56127F795}|NumericketConsole\\NumericketConsoleApp.csproj|solutionrelative:numericketconsole\\ui\\numericketconsolemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{0A1BA775-7C3F-8489-4DF2-45C56127F795}|NumericketConsole\\NumericketConsoleApp.csproj|c:\\repository\\numericket\\numericketconsole\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0A1BA775-7C3F-8489-4DF2-45C56127F795}|NumericketConsole\\NumericketConsoleApp.csproj|solutionrelative:numericketconsole\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{95D2783E-9776-49AD-BF11-9018F411A1E1}|TossLibrary\\TossLibrary.csproj|c:\\repository\\numericket\\tosslibrary\\abstractheadsortailstossmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{95D2783E-9776-49AD-BF11-9018F411A1E1}|TossLibrary\\TossLibrary.csproj|solutionrelative:tosslibrary\\abstractheadsortailstossmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6AF690C2-8881-4F95-887F-B439C58E390A}|CacheManagerLibrary\\CacheManagerLibrary.csproj|c:\\repository\\numericket\\cachemanagerlibrary\\abstractcacherepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6AF690C2-8881-4F95-887F-B439C58E390A}|CacheManagerLibrary\\CacheManagerLibrary.csproj|solutionrelative:cachemanagerlibrary\\abstractcacherepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{95D2783E-9776-49AD-BF11-9018F411A1E1}|TossLibrary\\TossLibrary.csproj|c:\\repository\\numericket\\tosslibrary\\abstractoddoreventossmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{95D2783E-9776-49AD-BF11-9018F411A1E1}|TossLibrary\\TossLibrary.csproj|solutionrelative:tosslibrary\\abstractoddoreventossmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F47E5571-692F-4FC2-AFE8-8191114FA0C8}|Tests\\CacheManagerLibraryTests\\CacheManagerLibraryTests.csproj|c:\\repository\\numericket\\tests\\cachemanagerlibrarytests\\jsoncacherepositorytests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F47E5571-692F-4FC2-AFE8-8191114FA0C8}|Tests\\CacheManagerLibraryTests\\CacheManagerLibraryTests.csproj|solutionrelative:tests\\cachemanagerlibrarytests\\jsoncacherepositorytests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{95D2783E-9776-49AD-BF11-9018F411A1E1}|TossLibrary\\TossLibrary.csproj|c:\\repository\\numericket\\tosslibrary\\abstracttossmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{95D2783E-9776-49AD-BF11-9018F411A1E1}|TossLibrary\\TossLibrary.csproj|solutionrelative:tosslibrary\\abstracttossmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{95D2783E-9776-49AD-BF11-9018F411A1E1}|TossLibrary\\TossLibrary.csproj|c:\\repository\\numericket\\tosslibrary\\itossmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{95D2783E-9776-49AD-BF11-9018F411A1E1}|TossLibrary\\TossLibrary.csproj|solutionrelative:tosslibrary\\itossmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0A1BA775-7C3F-8489-4DF2-45C56127F795}|NumericketConsole\\NumericketConsoleApp.csproj|c:\\repository\\numericket\\numericketconsole\\models\\team.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0A1BA775-7C3F-8489-4DF2-45C56127F795}|NumericketConsole\\NumericketConsoleApp.csproj|solutionrelative:numericketconsole\\models\\team.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0A1BA775-7C3F-8489-4DF2-45C56127F795}|NumericketConsole\\NumericketConsoleApp.csproj|c:\\repository\\numericket\\numericketconsole\\models\\match.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0A1BA775-7C3F-8489-4DF2-45C56127F795}|NumericketConsole\\NumericketConsoleApp.csproj|solutionrelative:numericketconsole\\models\\match.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6A397FB4-298B-4903-B73A-B90666DCB62C}|ConsoleLibrary\\ConsoleLibrary.csproj|c:\\repository\\numericket\\consolelibrary\\abstractconsolemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6A397FB4-298B-4903-B73A-B90666DCB62C}|ConsoleLibrary\\ConsoleLibrary.csproj|solutionrelative:consolelibrary\\abstractconsolemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -62,158 +30,54 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "INumericketTossManager.cs",
-              "DocumentMoniker": "C:\\Repository\\Numericket\\NumericketConsole\\Toss\\INumericketTossManager.cs",
-              "RelativeDocumentMoniker": "NumericketConsole\\Toss\\INumericketTossManager.cs",
-              "ToolTip": "C:\\Repository\\Numericket\\NumericketConsole\\Toss\\INumericketTossManager.cs",
-              "RelativeToolTip": "NumericketConsole\\Toss\\INumericketTossManager.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-13T19:36:02.442Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "NumericketTossManager.cs",
-              "DocumentMoniker": "C:\\Repository\\Numericket\\NumericketConsole\\Toss\\NumericketTossManager.cs",
-              "RelativeDocumentMoniker": "NumericketConsole\\Toss\\NumericketTossManager.cs",
-              "ToolTip": "C:\\Repository\\Numericket\\NumericketConsole\\Toss\\NumericketTossManager.cs",
-              "RelativeToolTip": "NumericketConsole\\Toss\\NumericketTossManager.cs",
-              "ViewState": "AgIAALYAAAAAAAAAAAAowAkAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-13T19:36:01.129Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "NumericketConsoleManager.cs",
-              "DocumentMoniker": "C:\\Repository\\Numericket\\NumericketConsole\\UI\\NumericketConsoleManager.cs",
-              "RelativeDocumentMoniker": "NumericketConsole\\UI\\NumericketConsoleManager.cs",
-              "ToolTip": "C:\\Repository\\Numericket\\NumericketConsole\\UI\\NumericketConsoleManager.cs",
-              "RelativeToolTip": "NumericketConsole\\UI\\NumericketConsoleManager.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-13T19:35:59.064Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Repository\\Numericket\\NumericketConsole\\Program.cs",
-              "RelativeDocumentMoniker": "NumericketConsole\\Program.cs",
-              "ToolTip": "C:\\Repository\\Numericket\\NumericketConsole\\Program.cs",
-              "RelativeToolTip": "NumericketConsole\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-13T19:35:58.164Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "AbstractHeadsOrTailsTossManager.cs",
-              "DocumentMoniker": "C:\\Repository\\Numericket\\TossLibrary\\AbstractHeadsOrTailsTossManager.cs",
-              "RelativeDocumentMoniker": "TossLibrary\\AbstractHeadsOrTailsTossManager.cs",
-              "ToolTip": "C:\\Repository\\Numericket\\TossLibrary\\AbstractHeadsOrTailsTossManager.cs",
-              "RelativeToolTip": "TossLibrary\\AbstractHeadsOrTailsTossManager.cs",
-              "ViewState": "AgIAACYAAAAAAAAAAAAwwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-13T19:35:54.701Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "AbstractOddOrEvenTossManager.cs",
-              "DocumentMoniker": "C:\\Repository\\Numericket\\TossLibrary\\AbstractOddOrEvenTossManager.cs",
-              "RelativeDocumentMoniker": "TossLibrary\\AbstractOddOrEvenTossManager.cs",
-              "ToolTip": "C:\\Repository\\Numericket\\TossLibrary\\AbstractOddOrEvenTossManager.cs",
-              "RelativeToolTip": "TossLibrary\\AbstractOddOrEvenTossManager.cs",
-              "ViewState": "AgIAAEcAAAAAAAAAAAAAwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-13T19:35:52.086Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "MatchExecutor.cs",
-              "DocumentMoniker": "C:\\Repository\\Numericket\\NumericketConsole\\Game\\MatchExecutor.cs",
-              "RelativeDocumentMoniker": "NumericketConsole\\Game\\MatchExecutor.cs",
-              "ToolTip": "C:\\Repository\\Numericket\\NumericketConsole\\Game\\MatchExecutor.cs",
-              "RelativeToolTip": "NumericketConsole\\Game\\MatchExecutor.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAwwC8AAAAdAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-13T19:33:31.338Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 3,
               "Title": "AbstractConsoleManager.cs",
               "DocumentMoniker": "C:\\Repository\\Numericket\\ConsoleLibrary\\AbstractConsoleManager.cs",
               "RelativeDocumentMoniker": "ConsoleLibrary\\AbstractConsoleManager.cs",
               "ToolTip": "C:\\Repository\\Numericket\\ConsoleLibrary\\AbstractConsoleManager.cs",
               "RelativeToolTip": "ConsoleLibrary\\AbstractConsoleManager.cs",
-              "ViewState": "AgIAAK8AAAAAAAAAAAAcwMIAAAApAAAAAAAAAA==",
+              "ViewState": "AgIAADcAAAAAAAAAAAAcwDsAAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-13T19:36:06.699Z",
+              "WhenOpened": "2026-08-14T20:07:11.127Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "AbstractTossManager.cs",
-              "DocumentMoniker": "C:\\Repository\\Numericket\\TossLibrary\\AbstractTossManager.cs",
-              "RelativeDocumentMoniker": "TossLibrary\\AbstractTossManager.cs",
-              "ToolTip": "C:\\Repository\\Numericket\\TossLibrary\\AbstractTossManager.cs",
-              "RelativeToolTip": "TossLibrary\\AbstractTossManager.cs",
-              "ViewState": "AgIAAEoAAAAAAAAAAAAAwAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Repository\\Numericket\\NumericketConsole\\Program.cs",
+              "RelativeDocumentMoniker": "NumericketConsole\\Program.cs",
+              "ToolTip": "C:\\Repository\\Numericket\\NumericketConsole\\Program.cs",
+              "RelativeToolTip": "NumericketConsole\\Program.cs",
+              "ViewState": "AgIAAEcAAAAAAAAAAAAIwDMAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-13T19:35:48.479Z",
+              "WhenOpened": "2026-08-14T19:50:53.102Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "ITossManager.cs",
-              "DocumentMoniker": "C:\\Repository\\Numericket\\TossLibrary\\ITossManager.cs",
-              "RelativeDocumentMoniker": "TossLibrary\\ITossManager.cs",
-              "ToolTip": "C:\\Repository\\Numericket\\TossLibrary\\ITossManager.cs",
-              "RelativeToolTip": "TossLibrary\\ITossManager.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "AbstractCacheRepository.cs",
+              "DocumentMoniker": "C:\\Repository\\Numericket\\CacheManagerLibrary\\AbstractCacheRepository.cs",
+              "RelativeDocumentMoniker": "CacheManagerLibrary\\AbstractCacheRepository.cs",
+              "ToolTip": "C:\\Repository\\Numericket\\CacheManagerLibrary\\AbstractCacheRepository.cs",
+              "RelativeToolTip": "CacheManagerLibrary\\AbstractCacheRepository.cs",
+              "ViewState": "AgIAAIIAAAAAAAAAAAAkwJIAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-13T19:35:47.36Z",
+              "WhenOpened": "2026-08-14T19:11:26.419Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Team.cs",
-              "DocumentMoniker": "C:\\Repository\\Numericket\\NumericketConsole\\Models\\Team.cs",
-              "RelativeDocumentMoniker": "NumericketConsole\\Models\\Team.cs",
-              "ToolTip": "C:\\Repository\\Numericket\\NumericketConsole\\Models\\Team.cs",
-              "RelativeToolTip": "NumericketConsole\\Models\\Team.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "JsonCacheRepositoryTests.cs",
+              "DocumentMoniker": "C:\\Repository\\Numericket\\Tests\\CacheManagerLibraryTests\\JsonCacheRepositoryTests.cs",
+              "RelativeDocumentMoniker": "Tests\\CacheManagerLibraryTests\\JsonCacheRepositoryTests.cs",
+              "ToolTip": "C:\\Repository\\Numericket\\Tests\\CacheManagerLibraryTests\\JsonCacheRepositoryTests.cs",
+              "RelativeToolTip": "Tests\\CacheManagerLibraryTests\\JsonCacheRepositoryTests.cs",
+              "ViewState": "AgIAAHMAAAAAAAAAAAAUwE4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-13T19:34:35.417Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "Match.cs",
-              "DocumentMoniker": "C:\\Repository\\Numericket\\NumericketConsole\\Models\\Match.cs",
-              "RelativeDocumentMoniker": "NumericketConsole\\Models\\Match.cs",
-              "ToolTip": "C:\\Repository\\Numericket\\NumericketConsole\\Models\\Match.cs",
-              "RelativeToolTip": "NumericketConsole\\Models\\Match.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAASAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-13T19:34:22.973Z",
+              "WhenOpened": "2026-08-14T18:25:40.988Z",
               "EditorCaption": ""
             }
           ]
