@@ -8,12 +8,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Remove="Common\**" />
-    <EmbeddedResource Remove="Common\**" />
-    <None Remove="Common\**" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\CacheManagerLibrary\CacheManagerLibrary.csproj" />
     <ProjectReference Include="..\ConsoleLibrary\ConsoleLibrary.csproj" />
     <ProjectReference Include="..\TossLibrary\TossLibrary.csproj" />

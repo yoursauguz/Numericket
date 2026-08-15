@@ -6,6 +6,8 @@ public abstract class AbstractConsoleManager : IConsoleManager
 
     protected virtual ConsoleColor DefaultConsoleForegroundColor() => ConsoleColor.Gray;
 
+    protected virtual string ApplicationTitle() => "";
+
     protected virtual string FormatMessage(string message, string title)
     {
         if (String.IsNullOrEmpty(message))
@@ -42,6 +44,44 @@ public abstract class AbstractConsoleManager : IConsoleManager
             Console.ForegroundColor = defaultColor;
     }
 
+    public string GetPassword(ConsoleMessageType type, string message, string title = "",char mask = '*')
+    {
+        DisplayMessage(type, message, title);
+        string password = string.Empty;
+        ConsoleKeyInfo key;
+
+        do
+        {
+          
+            key = Console.ReadKey(intercept: true);
+
+            if (key.Key == ConsoleKey.Backspace)
+            {
+                if (password.Length > 0)
+                {
+                    password = password[..^1]; 
+                    Console.Write("\b \b");  
+                }
+            }
+            else if (!char.IsControl(key.KeyChar))
+            {
+                password += key.KeyChar;
+                Console.Write(mask);
+            }
+
+        } while (key.Key != ConsoleKey.Enter);
+
+        Console.WriteLine(); 
+        return password;
+    }
+
+    public string GetLine(ConsoleMessageType type, string message, string title = "")
+    {
+        DisplayMessage(type, message, title);
+
+        return Console.ReadLine() ?? "";
+    }
+
     public int GetAllowedNumericInput(IReadOnlyDictionary<char, int> allowedValues, string errorMessage = "")
     {
         if (allowedValues == null)
@@ -56,10 +96,8 @@ public abstract class AbstractConsoleManager : IConsoleManager
             char keyChar = char.ToUpper(input.KeyChar);
 
             if (allowedValues.TryGetValue(keyChar, out int result))
-            {
-                Console.Clear();
                 return result;
-            }
+            
 
             if (!String.IsNullOrEmpty(errorMessage))
                 DisplayMessage(ConsoleMessageType.ERROR, errorMessage);
@@ -176,6 +214,7 @@ public abstract class AbstractConsoleManager : IConsoleManager
         ConsoleKeyInfo input = Console.ReadKey(intercept: true);
         return char.ToUpper(input.KeyChar);
     }
+
     private void RenderRowsByColumnValues(ConsoleMessageType type, string[] columns, TableSpacing spacing = TableSpacing.CENTER)
     {
         if (columns.Length == 0)

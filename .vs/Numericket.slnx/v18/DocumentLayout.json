@@ -3,20 +3,8 @@
   "WorkspaceRootPath": "C:\\Repository\\Numericket\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{0A1BA775-7C3F-8489-4DF2-45C56127F795}|NumericketConsole\\NumericketConsoleApp.csproj|c:\\repository\\numericket\\numericketconsole\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0A1BA775-7C3F-8489-4DF2-45C56127F795}|NumericketConsole\\NumericketConsoleApp.csproj|solutionrelative:numericketconsole\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6AF690C2-8881-4F95-887F-B439C58E390A}|CacheManagerLibrary\\CacheManagerLibrary.csproj|c:\\repository\\numericket\\cachemanagerlibrary\\abstractcacherepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6AF690C2-8881-4F95-887F-B439C58E390A}|CacheManagerLibrary\\CacheManagerLibrary.csproj|solutionrelative:cachemanagerlibrary\\abstractcacherepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F47E5571-692F-4FC2-AFE8-8191114FA0C8}|Tests\\CacheManagerLibraryTests\\CacheManagerLibraryTests.csproj|c:\\repository\\numericket\\tests\\cachemanagerlibrarytests\\jsoncacherepositorytests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F47E5571-692F-4FC2-AFE8-8191114FA0C8}|Tests\\CacheManagerLibraryTests\\CacheManagerLibraryTests.csproj|solutionrelative:tests\\cachemanagerlibrarytests\\jsoncacherepositorytests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6A397FB4-298B-4903-B73A-B90666DCB62C}|ConsoleLibrary\\ConsoleLibrary.csproj|c:\\repository\\numericket\\consolelibrary\\abstractconsolemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6A397FB4-298B-4903-B73A-B90666DCB62C}|ConsoleLibrary\\ConsoleLibrary.csproj|solutionrelative:consolelibrary\\abstractconsolemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0A1BA775-7C3F-8489-4DF2-45C56127F795}|NumericketConsole\\NumericketConsoleApp.csproj|c:\\repository\\numericket\\numericketconsole\\ui\\numericketapplication.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0A1BA775-7C3F-8489-4DF2-45C56127F795}|NumericketConsole\\NumericketConsoleApp.csproj|solutionrelative:numericketconsole\\ui\\numericketapplication.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,58 +14,19 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "AbstractConsoleManager.cs",
-              "DocumentMoniker": "C:\\Repository\\Numericket\\ConsoleLibrary\\AbstractConsoleManager.cs",
-              "RelativeDocumentMoniker": "ConsoleLibrary\\AbstractConsoleManager.cs",
-              "ToolTip": "C:\\Repository\\Numericket\\ConsoleLibrary\\AbstractConsoleManager.cs",
-              "RelativeToolTip": "ConsoleLibrary\\AbstractConsoleManager.cs",
-              "ViewState": "AgIAADcAAAAAAAAAAAAcwDsAAAAXAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-14T20:07:11.127Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Repository\\Numericket\\NumericketConsole\\Program.cs",
-              "RelativeDocumentMoniker": "NumericketConsole\\Program.cs",
-              "ToolTip": "C:\\Repository\\Numericket\\NumericketConsole\\Program.cs",
-              "RelativeToolTip": "NumericketConsole\\Program.cs",
-              "ViewState": "AgIAAEcAAAAAAAAAAAAIwDMAAAAiAAAAAAAAAA==",
+              "Title": "NumericketApplication.cs",
+              "DocumentMoniker": "C:\\Repository\\Numericket\\NumericketConsole\\UI\\NumericketApplication.cs",
+              "RelativeDocumentMoniker": "NumericketConsole\\UI\\NumericketApplication.cs",
+              "ToolTip": "C:\\Repository\\Numericket\\NumericketConsole\\UI\\NumericketApplication.cs",
+              "RelativeToolTip": "NumericketConsole\\UI\\NumericketApplication.cs",
+              "ViewState": "AgIAAKcBAAAAAAAAAAAkwLEBAABGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-14T19:50:53.102Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "AbstractCacheRepository.cs",
-              "DocumentMoniker": "C:\\Repository\\Numericket\\CacheManagerLibrary\\AbstractCacheRepository.cs",
-              "RelativeDocumentMoniker": "CacheManagerLibrary\\AbstractCacheRepository.cs",
-              "ToolTip": "C:\\Repository\\Numericket\\CacheManagerLibrary\\AbstractCacheRepository.cs",
-              "RelativeToolTip": "CacheManagerLibrary\\AbstractCacheRepository.cs",
-              "ViewState": "AgIAAIIAAAAAAAAAAAAkwJIAAAAWAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-14T19:11:26.419Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "JsonCacheRepositoryTests.cs",
-              "DocumentMoniker": "C:\\Repository\\Numericket\\Tests\\CacheManagerLibraryTests\\JsonCacheRepositoryTests.cs",
-              "RelativeDocumentMoniker": "Tests\\CacheManagerLibraryTests\\JsonCacheRepositoryTests.cs",
-              "ToolTip": "C:\\Repository\\Numericket\\Tests\\CacheManagerLibraryTests\\JsonCacheRepositoryTests.cs",
-              "RelativeToolTip": "Tests\\CacheManagerLibraryTests\\JsonCacheRepositoryTests.cs",
-              "ViewState": "AgIAAHMAAAAAAAAAAAAUwE4AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-14T18:25:40.988Z",
+              "WhenOpened": "2026-08-15T18:22:39.229Z",
               "EditorCaption": ""
             }
           ]

@@ -8,11 +8,6 @@ namespace CacheManagerLibrary;
 public interface ICacheable<T> where T : class, new()
 {
     /// <summary>
-    /// Sets or gets the data 
-    /// </summary>
-    T Data { get; set; }
-
-    /// <summary>
     /// Saves the data to the specified path
     /// </summary>
     Task SaveAsync();

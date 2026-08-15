@@ -8,12 +8,10 @@ namespace CacheManagerLibrary;
 /// <typeparam name="T">Type of object to be cached</typeparam>
 public abstract class AbstractJsonCacheRepository<T> : ICacheable<T> where T : class, new()
 {
-
     /// <summary>
     /// <inheritdoc/>
     /// </summary>
-    public T Data { get; set; } = new();
-
+    protected T Data { get; set; } = new();
 
     /**
      * ABSTRACT / VIRTUAL METHODS 
